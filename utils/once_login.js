@@ -3,12 +3,12 @@ const fs = require('fs');
 const readline = require('readline');
 const minimist = require('minimist');
 
-const args = minimist(process.argv.slice(3));
+const args = minimist(process.argv.slice(2));
 const username = args.username;
 const password = args.password;
 const session_filename = args.session;
 
-if (!username || !password) {
+if (!username || !password || !session_filename) {
     console.error("❌ Harap masukkan --username, --password, --session sebagai argumen.");
     process.exit(1);
 }
