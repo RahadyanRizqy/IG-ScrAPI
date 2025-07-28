@@ -1,0 +1,10 @@
+utils/once_login.js
+session.json
+node_modules/
+privates/
+old_ig_scraper/
+database/*.db
+database/*.sqlite
+tests/
+.env
+razor.json
